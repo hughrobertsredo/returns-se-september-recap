@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Returns SE September Recap</title>
+</head>
+<body>
+<title>Returns SE Review, Sept 2026</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
 <style>
+/* Layout: single editorial column on the Redo light palette, 8px grid, sharp-cornered cards, one orange moment (the 70.3% hero stat). */
 :root{
   --page-bg:#F7F6F4; --surface-bg:#FFFFFF; --text-primary:#2A2A28; --text-secondary:#5A5955;
   --muted:#9B9A96; --divider:#E4E3DF; --row-alt:#F0EFED; --black:#0D0D0D;
@@ -51,10 +54,12 @@ tr.total td{font-weight:600;border-bottom:2px solid var(--text-primary)}
 .pill{display:inline-block;font-size:12px;line-height:16px;font-weight:600;padding:0 8px;border-radius:3px}
 .pill.neg{background:var(--neg-bg);color:var(--neg)}
 .pill.pos{background:var(--pos-bg);color:var(--pos)}
+/* lever walk */
 .walk{display:flex;flex-direction:column;gap:8px}
 .wrow{display:grid;grid-template-columns:minmax(0,5fr) 64px minmax(0,7fr);gap:16px;align-items:center}
 .wlab{display:flex;flex-direction:column;min-width:0}
 .wlab b{font-size:14px;line-height:16px}
+.wlab span{font-size:12px;line-height:16px;color:var(--text-secondary)}
 .wval{font-size:14px;line-height:16px;font-weight:600;color:var(--text-primary);text-align:right;font-variant-numeric:tabular-nums}
 .track{position:relative;height:32px}
 .track::before{content:'';position:absolute;top:0;bottom:0;left:28.571%;width:1px;background:var(--divider)}
@@ -75,8 +80,7 @@ tr.total td{font-weight:600;border-bottom:2px solid var(--text-primary)}
 footer{border-top:1px solid var(--divider);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
 footer img{height:18px;width:auto}
 </style>
-</head>
-<body>
+
 <div class="wrap">
 
 <header>
@@ -195,12 +199,12 @@ footer img{height:18px;width:auto}
   <div class="card"><div class="scroll"><table>
     <thead><tr><th>Driver</th><th>Deals</th><th>Deal size</th><th>Cost</th></tr></thead>
     <tbody>
-      <tr><td>Coverage off or barely on: attach under 10%</td><td>25</td><td>$511K</td><td><span class="pill neg">-2.3%</span></td></tr>
-      <tr><td>Low eligibility: under half of orders coverage-eligible</td><td>28</td><td>$479K</td><td><span class="pill neg">-1.8%</span></td></tr>
-      <tr><td>Sized too high: 21 under half of sized order volume, 18 attach above 40% and still under half of deal size</td><td>39</td><td>$513K</td><td><span class="pill neg">-1.8%</span></td></tr>
-      <tr><td>Attach of 10% to 40%</td><td>26</td><td>$291K</td><td><span class="pill neg">-0.9%</span></td></tr>
-      <tr><td>Clear 50% with Returns and PP+ read together. Allocation, not performance</td><td>17</td><td>$471K</td><td><span class="pill neg">-1.4%</span></td></tr>
-      <tr><td>Late go-live, churn, no order data</td><td>14</td><td>$294K</td><td><span class="pill neg">-0.9%</span></td></tr>
+      <tr><td>Coverage off / low attach</td><td>25</td><td>$511K</td><td><span class="pill neg">-2.3%</span></td></tr>
+      <tr><td>&lt;50% orders eligible</td><td>28</td><td>$479K</td><td><span class="pill neg">-1.8%</span></td></tr>
+      <tr><td>Deal sized too high</td><td>39</td><td>$513K</td><td><span class="pill neg">-1.8%</span></td></tr>
+      <tr><td>Attach 10% to 40%</td><td>26</td><td>$291K</td><td><span class="pill neg">-0.9%</span></td></tr>
+      <tr><td>Returns / PP+ allocation</td><td>17</td><td>$471K</td><td><span class="pill neg">-1.4%</span></td></tr>
+      <tr><td>Late go-live or churn</td><td>14</td><td>$294K</td><td><span class="pill neg">-0.9%</span></td></tr>
       <tr class="total"><td>Total</td><td>149</td><td>$2.56M</td><td>-9.0%</td></tr>
     </tbody>
   </table></div></div>
@@ -230,7 +234,6 @@ footer img{height:18px;width:auto}
   </ul>
   <div class="stack">
     <h3>Contracts going live late: -4.8%, all slippage</h3>
-    <p>This is a Mid-market problem. The Growth contract drag is gone. Mid-market underperformance is this same problem, not a separate finding. 7 of the 9 contracts not live and 3.6 of the 4.8% sit in Alexis Smith's Mid-market book.</p>
   </div>
   <ul>
     <li><strong>Chicks Saddlery (2.7%):</strong> core delay was the engineering build for exchanges. The controllable was scoping. Walk through the merchant's current and desired process with the merchant, the engineer and the SE before the build starts.</li>
@@ -244,7 +247,7 @@ footer img{height:18px;width:auto}
 
 <section>
   <h2>3. New-hire ramp: 17% against 33%</h2>
-  <p>Brand new reps run 17% of deal size in month 0 against 33% for ramped SMB reps. We are taking new hires out of the Growth round robin and creating a training segment with a $10K maximum deal size to limit risk.</p>
+  <p>Brand new reps run 17% of deal size in month 0 against 33% for ramped SMB reps. We are taking new hires out of the SMB round robin and creating a training segment with a $10K maximum deal size to limit risk.</p>
   <div class="card"><div class="scroll"><table>
     <thead><tr><th>Month-0 deals: run rate / deal size</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Mar to Sep</th></tr></thead>
     <tbody>
@@ -271,5 +274,6 @@ footer img{height:18px;width:auto}
 </footer>
 
 </div>
+
 </body>
 </html>
