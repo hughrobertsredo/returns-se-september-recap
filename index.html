@@ -3,9 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<title>Returns SE Review, Sept 2026</title>
+<title>Returns SE September ’26 Recap</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: single editorial column on the Redo light palette, 8px grid, sharp-cornered cards, one orange moment (the 70.3% hero stat). */
@@ -79,202 +77,55 @@ tr.total td{font-weight:600;border-bottom:2px solid var(--text-primary)}
 @media (max-width:640px){.two{grid-template-columns:1fr}}
 footer{border-top:1px solid var(--divider);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
 footer img{height:18px;width:auto}
-</style>
 
+.lede{font-size:17px;line-height:28px;color:var(--text-primary)}
+.pull{font-family:var(--serif);font-style:italic;font-size:30px;line-height:36px;color:var(--text-primary);border-left:2px solid var(--orange);padding-left:24px;margin:8px 0;max-width:none;white-space:nowrap}
+@media (max-width:640px){.pull{white-space:normal;font-size:24px;line-height:32px}}
+.quote{border-left:2px solid var(--divider);padding-left:16px;font-style:italic;color:var(--text-primary)}
+.item{display:grid;grid-template-columns:32px minmax(0,1fr);gap:16px;padding-block:24px;border-top:1px solid var(--divider)}
+.item:last-child{border-bottom:1px solid var(--divider)}
+.item .n{font-family:var(--serif);font-weight:400;font-synthesis:none;font-size:30px;line-height:32px;color:var(--muted)}
+.item .body{display:flex;flex-direction:column;gap:12px;min-width:0}
+.item h3{font-size:16px;line-height:24px}
+.shout{font-size:13px;line-height:20px;color:var(--text-secondary);background:var(--row-alt);padding:8px 16px;max-width:none}
+td.l,th.l{text-align:left;white-space:normal}
+.tbd{color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;align-items:end;height:200px;border-bottom:1px solid var(--text-primary)}
+.col{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:8px;height:100%}
+.col b{font-size:13px;line-height:16px;font-variant-numeric:tabular-nums}
+.col i{display:block;width:100%;max-width:72px;background:#CFCDC7}
+.col.now i{background:var(--text-primary)}
+.colx{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;text-align:center;font-size:12px;line-height:16px;color:var(--text-secondary);padding-top:8px}
+h3.sub{font-size:18px;line-height:24px;font-weight:600;letter-spacing:0}
+.stats{align-items:start}
+.stat small{line-height:18px}
+.stat-num{white-space:nowrap}
+</style>
+</head>
+<body>
 <div class="wrap">
 
 <header>
   <img alt="Redo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjI1NSIgdmlld0JveD0iMCAwIDgwMCAyNTUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNODAwIDBIMFYyNTVIODAwVjBaTTc0NS41NyAxMjYuMTQ5Qzc0NS41NyAxMzguMjM0IDc0My4wODggMTY1LjQ3MiA3MTUuNzkgMTg0LjA3OEM3MDguNzI3IDE4OC44NzQgNzAxLjg1NSAxOTIuMTM1IDY5My44MzcgMTk0LjQzN0M2ODYuMDExIDE5Ni43MzkgNjc0LjE3NSAxOTkuMDQgNjU1LjA4NSAxOTkuMDRDNjI2LjQ1MSAxOTkuMDQgNjA5LjA3OSAxOTIuNzEgNTk4LjE5OCAxODYuMTg4QzU5NC41NzEgMTg0LjA3OCA1ODcuODkgMTc5LjY2NyA1ODEuMjA5IDE3MS42MUM1NjYuODkxIDE1NC4xNTUgNTY2LjMxOSAxMzYuNTA3IDU2Ni4zMTkgMTI3Ljg3NkM1NjYuMzE5IDkzLjczMTggNTg0LjQ1NCA3Ni42NTk5IDU5NS41MjYgNjkuMTc5QzYwNi45NzkgNjEuMzE0NCA2MjMuMzk3IDU0LjQwODkgNjUzLjU1OCA1NC4wMjUzQzY1OS42NjcgNTQuMDI1MyA2NjUuNTg1IDU0LjAyNTMgNjcxLjY5MyA1NC42MDA4QzcwNy4zOTEgNTcuNDc4IDcyMy45OTkgNzEuNjcyNiA3MzMuMzUzIDg1LjA5OTlDNzM3Ljc0MyA5MS42MjE4IDc0NS41NyAxMDUuNjI1IDc0NS41NyAxMjYuMTQ5Wk02OTUuOTM3IDEyNi41MzNDNjk1LjkzNyAxMDkuMjY5IDY4OC42ODMgOTguMzM1NCA2ODMuNzIgOTMuOTIzNkM2ODEuODExIDkyLjAwNTQgNjc3LjIyOSA4OC41NTI3IDY3MC43MzkgODYuMjUwOUM2NjcuMzAzIDg1LjA5OTkgNjYzLjY3NiA4NC4xNDA5IDY1Ni40MjIgODQuMTQwOUM2NTAuMTIyIDg0LjE0MDkgNjQ0Ljk2OCA4NC43MTYzIDYzOS4wNSA4Ny4yMUM2MjMuMjA2IDkzLjkyMzYgNjE1Ljk1MiAxMTAuMjI4IDYxNS45NTIgMTI2LjcyNUM2MTUuOTUyIDEyOS4yMTggNjE2LjE0MyAxMzYuMTI0IDYxOC42MjQgMTQzLjIyMUM2MjYuNjQyIDE2Ny4zOSA2NDguNDA0IDE2OS4xMTcgNjU2LjYxMiAxNjkuMTE3QzY1OC45MDMgMTY5LjExNyA2NjcuNDk0IDE2OS4xMTcgNjc0Ljc0OCAxNjUuODU2QzY4OS44MjggMTU5LjE0MiA2OTUuOTM3IDE0MS44NzggNjk1LjkzNyAxMjYuNTMzWk01NTMuMTA2IDEyOC4yNTlDNTUzLjEwNiAxMzQuMzk3IDU1Mi41MzMgMTU2LjQ1NyA1MzguNzg5IDE3Mi41NjlDNTM2LjQ5OCAxNzUuNDQ3IDUzMS43MjUgMTgwLjI0MiA1MjMuNzA4IDE4NC44NDZDNTIwLjg0NCAxODYuMzggNTE0LjczNiAxODkuNjQxIDUwNi41MjcgMTkxLjc1MUM0OTkuNjU1IDE5My40NzggNDk0LjY5MSAxOTQuNDM3IDQ4MS4xMzggMTk0LjQzN0gzOTUuNjE2VjU5LjAxMjdINDcyLjE2NkM0NzcuNTExIDU5LjAxMjcgNDgyLjg1NiA1OS4yMDQ1IDQ4OC4yMDEgNTkuNTg4MUM1MTkuNTA4IDYyLjI3MzYgNTMzLjI1MyA3NS41MDkxIDU0MS4yNyA4Ny4yMUM1NTIuNzI0IDEwMy43MDYgNTUzLjEwNiAxMjAuOTcgNTUzLjEwNiAxMjguMjU5Wk01MDUuOTU0IDEyNy4xMDhDNTA1Ljk1NCAxMjIuODg4IDUwNS4zODIgMTA3LjczNSA0OTMuNTQ2IDk4LjUyNzNDNDgzLjgzNiA5MS4xNjM2IDQ3MC4yNTggOTEuMjIwNCA0NjYuMzExIDkxLjIzNjlDNDY2LjE0NiA5MS4yMzc2IDQ2NS45OTcgOTEuMjM4MiA0NjUuODY2IDkxLjIzODJINDQyLjc2OFYxNjMuNzQ2SDQ2Ny4zOTNDNDcwLjA2NiAxNjMuNzQ2IDQ3Mi45MjkgMTYzLjU1NCA0NzUuNzkzIDE2My4xN0M0OTIuNDAxIDE2MS4wNiA0OTguMzE5IDE1My41NzkgNTAxLjU2NCAxNDYuNjc0QzUwNS43NjMgMTM4LjA0MiA1MDUuOTU0IDEzMC43NTMgNTA1Ljk1NCAxMjcuMTA4Wk0yMjguNjg1IDE5NC40MzdIMzcyLjYyMVYxNjMuNzQ2SDI3Ni45ODJWMTQyLjA3SDM2My44MzlWMTExLjU3MUgyNzYuOTgyVjg5LjMySDM3MC45MDNWNTkuMDEyN0gyMjguNjg1VjE5NC40MzdaTTIwOS4xMDcgMTk0LjQzN0gxNTUuODQ3TDEyNy45NzYgMTQ1LjEzOUgxMDIuMzk2VjE5NC40MzdINTMuOTA4MlY1OS4wMTI3SDE1My4xNzRDMTcxLjMwOSA1OS4wMTI3IDE4OC42ODEgNjAuMzU1NCAxOTkuNTYyIDc3LjYxOTFDMjAyLjA0NCA4MS42NDczIDIwNi40MzQgODkuNzAzNyAyMDYuNDM0IDEwMS45OEMyMDYuNDM0IDEwOC4zMSAyMDUuMDk4IDEyNi4zNDEgMTg4LjEwOCAxMzUuNzRDMTg0Ljg2MyAxMzcuNjU4IDE4Mi4zODEgMTM4LjYxNyAxNzUuNTA5IDE0MC4zNDRMMjA5LjEwNyAxOTQuNDM3Wk0xNTguMzI4IDEwMi4xNzJDMTU4LjMyOCAxMDEuMDIxIDE1OC4xMzcgOTcuOTUxOSAxNTYuMjI4IDk1LjI2NjRDMTUyLjk4MyA5MC40NzA5IDE0Ny42MzggODkuNzAzNyAxNDIuNDg0IDg5LjcwMzdIMTAyLjM5NlYxMTQuNjRIMTM4LjY2NkMxNDcuODI5IDExNC42NCAxNTIuNjAxIDExMy40ODkgMTU1LjY1NiAxMDkuODQ1QzE1OC4xMzcgMTA2Ljc3NiAxNTguMzI4IDEwMy43MDYgMTU4LjMyOCAxMDIuMTcyWiIgZmlsbD0iIzE0MTQxNCIvPgo8L3N2Zz4K">
   <div class="stack">
-    <span class="label">Returns SE performance review</span>
-    <h1>Returns SE September Recap</h1>
-    <span class="by">Oct 1, 2026 · Hugh</span>
+    <h1>Returns SE September ’26 Recap</h1>
+    <span class="by">Prepared by Hugh Roberts</span>
   </div>
 </header>
 
 <div class="stats">
-  <div class="stat"><span class="stat-num accent">70.3%</span><span class="label">Run rate / deal size</span><small>Against a 70.0% ramp target</small></div>
-  <div class="stat"><span class="stat-num">$12.80M</span><span class="label">Run rate</span><small>An all-time high</small></div>
-  <div class="stat"><span class="stat-num">119.9%</span><span class="label">Net live</span><small>157% including Grailed</small></div>
-  <div class="stat"><span class="stat-num">106.5%</span><span class="label">Revenue quota</span><small>Best month since April</small></div>
+  <div class="stat"><span class="stat-num accent">108.1%</span><span class="label">Revenue</span><small>$12.9M / $11.9M</small></div>
+  <div class="stat"><span class="stat-num">70.3%</span><span class="label">Cohort attainment</span><small>M0 34% · M1 89% · M2 91%</small></div>
+  <div class="stat"><span class="stat-num accent">119.9%</span><span class="label">Net new revenue</span><small>$7.3M / $6.1M<br><span style="color:var(--orange);font-weight:600">152.7%</span> w/ Grailed</small></div>
+  <div class="stat"><span class="stat-num">$307K</span><span class="label">M0-M2 churn</span><small>1.7% of booked</small></div>
 </div>
 
 <section>
   <h2>Executive summary</h2>
-  <p>The Returns SE book ran at 70.3% of deal size across M0, M1, and M2. Our benchmark of success is 70% attainment, which means we’re attaining at 30% of M0, 85% of M1, and 100% of M2 deal size.</p>
-  <p>We saw $12.80M of run rate on $18.22M of deal size, 794 deals across the 3 months, 12 ramped SEs. Best month since April and up 14% from August.</p>
-  <p>Run rate / deal size is the SE key metric and the primary measure throughout the report. A healthy deal meets ramp: 30% of deal size in month 0, 85% in month 1, 100% in month 2. Every point below or above is measured against that baseline.</p>
-
-  <h3>Highlights</h3>
+  <p class="lede">Michael Phelps came into the Rio Olympics as the most decorated Olympian in history with 18 gold medals. He won two more golds on the first night. After the second race, still catching his breath, he looked ahead to his remaining events and said:</p>
+  <p class="pull">“I’m not even halfway done yet.”</p>
+  <p>That’s how September felt for the ReLo SEs. We have some wins, some gold medals:</p>
   <ul>
-    <li><strong>We hit target.</strong> 119.9% of net live (157% including Grailed), 106.5% of revenue quota. This translates to 70.3% deal attainment across M0, M1, and M2. $12.80M of run rate is an all-time high.</li>
-    <li><strong>Contracts:</strong> Seth onboarded the largest deal in Redo history. Grailed went live at $2.0M of deal size and is expected to perform at $6M.</li>
-    <li><strong>Month 0:</strong> 34% attainment is the highest in 12+ months. More urgency = more deals live sooner.</li>
-    <li><strong>Live non-contract deals:</strong> 8.2% above target. Month 1 was 116% vs. the 85% benchmark.</li>
-    <li><strong>Run rate:</strong> $12.80M, an all-time high.</li>
-  </ul>
-
-  <div class="two">
-    <div class="card">
-      <h3>Run rate / deal size</h3>
-      <div class="scroll"><table>
-        <thead><tr><th></th><th>Jul</th><th>Aug</th><th>Sep</th><th>Target</th></tr></thead>
-        <tbody>
-          <tr class="total"><td>Team</td><td>57%</td><td>56%</td><td>70%</td><td>70%</td></tr>
-          <tr><td>Month 0</td><td>29%</td><td>24%</td><td>34%</td><td>30%</td></tr>
-          <tr><td>Month 1</td><td>70%</td><td>97%</td><td>89%</td><td>85%</td></tr>
-          <tr><td>Month 2</td><td>68%</td><td>65%</td><td>91%</td><td>100%</td></tr>
-        </tbody>
-      </table></div>
-      <p class="note">Team target is 70% for September's mix of deal ages.</p>
-    </div>
-    <div class="card">
-      <h3>Run rate and deal size in book, $M</h3>
-      <div class="scroll"><table>
-        <thead><tr><th></th><th>Run rate</th><th>Deal size</th></tr></thead>
-        <tbody>
-          <tr><td>Feb</td><td>6.75</td><td>11.38</td></tr>
-          <tr><td>Mar</td><td>9.12</td><td>13.10</td></tr>
-          <tr><td>Apr</td><td>11.05</td><td>15.41</td></tr>
-          <tr><td>May</td><td>11.86</td><td>17.31</td></tr>
-          <tr><td>Jun</td><td>11.81</td><td>19.07</td></tr>
-          <tr><td>Jul</td><td>11.22</td><td>19.53</td></tr>
-          <tr><td>Aug</td><td>11.79</td><td>21.15</td></tr>
-          <tr class="total"><td>Sep</td><td>12.80</td><td>18.22</td></tr>
-        </tbody>
-      </table></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>How we got from 70.0% to 70.3%</h2>
-  <div class="card">
-    <div class="walk">
-      <div class="wrow"><div class="wlab"><b>Ramp target</b></div><div class="wval">70.0%</div><div class="track"><div class="bar tot" style="left:0;width:28.49%"></div></div></div>
-      <div class="wrow"><div class="wlab"><b>Early go-live</b></div><div class="wval">+1.1%</div><div class="track"><div class="bar pos" style="left:28.49%;width:7.93%"></div></div></div>
-      <div class="wrow"><div class="wlab"><b>Attach rate and full ramping</b></div><div class="wval">+7.1%</div><div class="track"><div class="bar pos" style="left:36.42%;width:50.86%"></div></div></div>
-      <div class="wrow"><div class="wlab"><b>Closed won, no revenue yet</b></div><div class="wval">-2.0%</div><div class="track"><div class="bar neg" style="left:73.09%;width:14.19%"></div></div></div>
-      <div class="wrow"><div class="wlab"><b>Contracts not live or under ramp</b></div><div class="wval">-4.8%</div><div class="track"><div class="bar neg" style="left:38.66%;width:34.43%"></div></div></div>
-      <div class="wrow"><div class="wlab"><b>SE-sourced upsell / xsell</b></div><div class="wval">0.0%</div><div class="track"><div class="bar zero" style="left:38.66%"></div></div></div>
-      <div class="wrow"><div class="wlab"><b>Churned deals</b></div><div class="wval">-1.2%</div><div class="track"><div class="bar neg" style="left:30.43%;width:8.23%"></div></div></div>
-      <div class="wrow"><div class="wlab"><b>September actual</b></div><div class="wval">70.3%</div><div class="track"><div class="bar tot" style="left:0;width:30.43%"></div></div></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Challenges and solutions</h2>
-  <div>
-    <div class="challenge"><span class="n">1</span><div class="body">
-      <p><strong>Under-attach on live deals is now the largest cost: -9.0%.</strong> 149 of 486 live month-1 and month-2 deals ran under 50% of deal size. 113 of these were in SMB.</p>
-      <div class="sol"><span class="label">Solutions</span><ul>
-        <li>Spencer is launching an automatic deal sizer, which will correct a large portion of this.</li>
-        <li>Leverage Henry and Ben Woodward on the under-attaching deals, especially custom ones with unique challenges.</li>
-      </ul></div>
-    </div></div>
-    <div class="challenge"><span class="n">2</span><div class="body">
-      <p><strong>Contract growth is accelerating and the backlog is growing.</strong> The backlog doubled from $3.76M on Jul 1 to $7.73M on Oct 1. On average we sign $4.3M and close $2.9M per month.</p>
-      <div class="sol"><span class="label">Solutions</span><ul>
-        <li>Hire an enterprise Solution Architect - offer extended</li>
-        <li>Joint AE/SE forecasting to get ahead on deals and pull live instead of contracts.</li>
-        <li>Tighten controls on contracts, particularly outside Mid-market.</li>
-      </ul></div>
-    </div></div>
-    <div class="challenge"><span class="n">3</span><div class="body">
-      <p><strong>Contracts going live late (after contracted go-live date) cost 4.8%.</strong> 2.7% and 1% of the 4.8% were Chicks Saddlery and Darc Sport.</p>
-    </div></div>
-    <div class="challenge"><span class="n">4</span><div class="body">
-      <p><strong>Training.</strong></p>
-      <p>The last 3 Growth promotions saw a 9% drop in attainment (later recovered).</p>
-      <div class="sol"><span class="label">Solution</span><p>Team lead over SMB to create a “gauntlet” for SMB reps.</p></div>
-      <p>New hires perform at 17% of deal size in month 0 against 33% for ramped SMB reps.</p>
-      <div class="sol"><span class="label">Solution</span><p>Training segment with a $10K maximum deal size to limit risk.</p></div>
-    </div></div>
-  </div>
-</section>
-
-<section>
-  <h2>1. Under-attach on live deals: -9.0%</h2>
-  <p>This is now the largest cost. 149 of 486 live month-1 and month-2 deals ran under 50% of deal size in September. 113 of them are SMB.</p>
-  <div class="card"><div class="scroll"><table>
-    <thead><tr><th>Driver</th><th>Deals</th><th>Deal size</th><th>Cost</th></tr></thead>
-    <tbody>
-      <tr><td>Coverage off / low attach</td><td>25</td><td>$511K</td><td><span class="pill neg">-2.3%</span></td></tr>
-      <tr><td>&lt;50% orders eligible</td><td>28</td><td>$479K</td><td><span class="pill neg">-1.8%</span></td></tr>
-      <tr><td>Deal sized too high</td><td>39</td><td>$513K</td><td><span class="pill neg">-1.8%</span></td></tr>
-      <tr><td>Attach 10% to 40%</td><td>26</td><td>$291K</td><td><span class="pill neg">-0.9%</span></td></tr>
-      <tr><td>Returns / PP+ allocation</td><td>17</td><td>$471K</td><td><span class="pill neg">-1.4%</span></td></tr>
-      <tr><td>Late go-live or churn</td><td>14</td><td>$294K</td><td><span class="pill neg">-0.9%</span></td></tr>
-      <tr class="total"><td>Total</td><td>149</td><td>$2.56M</td><td>-9.0%</td></tr>
-    </tbody>
-  </table></div></div>
-</section>
-
-<section>
-  <h2>2. Contracts</h2>
-  <div class="stack">
-    <h3>Contract growth is outpacing completion</h3>
-    <p>We signed $12.8M of contracts in Q3 and took $8.8M live, 69%. The backlog went from 25 deals and $3.76M on Jul 1 to 33 deals and $7.73M on Oct 1.</p>
-  </div>
-  <div class="card"><div class="scroll"><table>
-    <thead><tr><th>Contract ACV</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Q3</th></tr></thead>
-    <tbody>
-      <tr><td>Backlog at month start</td><td>$3.76M</td><td>$5.34M</td><td>$3.93M</td><td>$3.76M</td></tr>
-      <tr><td>Signed in month</td><td>$3.71M</td><td>$2.13M</td><td>$6.94M</td><td>$12.78M</td></tr>
-      <tr><td>Went live in month</td><td>$2.14M</td><td>$3.54M</td><td>$3.14M</td><td>$8.82M</td></tr>
-      <tr class="total"><td>Backlog at month end</td><td>$5.34M</td><td>$3.93M</td><td>$7.73M</td><td>$7.73M</td></tr>
-      <tr><td>Contracts signed</td><td>26</td><td>22</td><td>26</td><td>74</td></tr>
-    </tbody>
-  </table></div></div>
-  <ul>
-    <li><strong>August only kept up because of two deals.</strong> Marc Jacobs ($1.2M) and Snipes ($1.06M) went live Aug 31.</li>
-    <li><strong>September's $3.14M includes Grailed at $2.0M.</strong> Without it we completed $1.1M against $4.9M signed.</li>
-    <li><strong>Seth holds $4.92M of the Oct 1 backlog:</strong> GOAT ($3.0M), Flight Club, Sneakers.com and the four Revelyst brands. Alexis holds 11 deals and $1.64M.</li>
-    <li><strong>16 contracts ($2.81M) carried out of September.</strong> 12 are past their contract go-live date.</li>
-  </ul>
-  <div class="stack">
-    <h3>Contracts going live late: -4.8%, all slippage</h3>
-  </div>
-  <ul>
-    <li><strong>Chicks Saddlery (2.7%):</strong> core delay was the engineering build for exchanges. The controllable was scoping. Walk through the merchant's current and desired process with the merchant, the engineer and the SE before the build starts.</li>
-    <li><strong>Darc Sport (1.05%):</strong> closed on contract meeting every criterion. The merchant then reprioritized over 3PL issues and moved go-live to December.</li>
-    <li><strong>Lucchese:</strong> deprioritized after other large custom deals like Grailed.</li>
-    <li><strong>Few Moda:</strong> we are now willing to do the build and are re-engaging.</li>
-    <li><strong>Contractors Direct:</strong> setup complete, merchant unresponsive since July.</li>
-    <li><strong>Oct 1 backlog:</strong> 33 deals, $7.73M.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>3. New-hire ramp: 17% against 33%</h2>
-  <p>Brand new reps run 17% of deal size in month 0 against 33% for ramped SMB reps. We are taking new hires out of the SMB round robin and creating a training segment with a $10K maximum deal size to limit risk.</p>
-  <div class="card"><div class="scroll"><table>
-    <thead><tr><th>Month-0 deals: run rate / deal size</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Mar to Sep</th></tr></thead>
-    <tbody>
-      <tr><td>Brand new reps</td><td>19%</td><td>12%</td><td>24%</td><td><strong>17%</strong></td></tr>
-      <tr><td>Ramped SMB reps</td><td>21%</td><td>41%</td><td>29%</td><td><strong>33%</strong></td></tr>
-    </tbody>
-  </table></div></div>
-  <p>One month later the same deals run 95%, against 91% for ramped reps. The cost is in month 0.</p>
-</section>
-
-<section>
-  <h2>4. Other data points</h2>
-  <ul>
-    <li><strong>International:</strong> 61% against 72% domestic. The gap is Muscle Nation ($535K), which went live on the last day of the month. Without it, international is 73% and consistent with domestic.</li>
-    <li><strong>Segments:</strong> Growth 75%, SMB 73%, Mid-market 36%. Mid-market is the contract problem above.</li>
-    <li><strong>Churn:</strong> 11 events, $307K, -1.2%. In line with July and August.
-      <ul><li>$100K of the $307K was driven by personnel issues, now resolved.</li></ul></li>
-  </ul>
-</section>
-
-<footer>
-  <img alt="Redo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjI1NSIgdmlld0JveD0iMCAwIDgwMCAyNTUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNODAwIDBIMFYyNTVIODAwVjBaTTc0NS41NyAxMjYuMTQ5Qzc0NS41NyAxMzguMjM0IDc0My4wODggMTY1LjQ3MiA3MTUuNzkgMTg0LjA3OEM3MDguNzI3IDE4OC44NzQgNzAxLjg1NSAxOTIuMTM1IDY5My44MzcgMTk0LjQzN0M2ODYuMDExIDE5Ni43MzkgNjc0LjE3NSAxOTkuMDQgNjU1LjA4NSAxOTkuMDRDNjI2LjQ1MSAxOTkuMDQgNjA5LjA3OSAxOTIuNzEgNTk4LjE5OCAxODYuMTg4QzU5NC41NzEgMTg0LjA3OCA1ODcuODkgMTc5LjY2NyA1ODEuMjA5IDE3MS42MUM1NjYuODkxIDE1NC4xNTUgNTY2LjMxOSAxMzYuNTA3IDU2Ni4zMTkgMTI3Ljg3NkM1NjYuMzE5IDkzLjczMTggNTg0LjQ1NCA3Ni42NTk5IDU5NS41MjYgNjkuMTc5QzYwNi45NzkgNjEuMzE0NCA2MjMuMzk3IDU0LjQwODkgNjUzLjU1OCA1NC4wMjUzQzY1OS42NjcgNTQuMDI1MyA2NjUuNTg1IDU0LjAyNTMgNjcxLjY5MyA1NC42MDA4QzcwNy4zOTEgNTcuNDc4IDcyMy45OTkgNzEuNjcyNiA3MzMuMzUzIDg1LjA5OTlDNzM3Ljc0MyA5MS42MjE4IDc0NS41NyAxMDUuNjI1IDc0NS41NyAxMjYuMTQ5Wk02OTUuOTM3IDEyNi41MzNDNjk1LjkzNyAxMDkuMjY5IDY4OC42ODMgOTguMzM1NCA2ODMuNzIgOTMuOTIzNkM2ODEuODExIDkyLjAwNTQgNjc3LjIyOSA4OC41NTI3IDY3MC43MzkgODYuMjUwOUM2NjcuMzAzIDg1LjA5OTkgNjYzLjY3NiA4NC4xNDA5IDY1Ni40MjIgODQuMTQwOUM2NTAuMTIyIDg0LjE0MDkgNjQ0Ljk2OCA4NC43MTYzIDYzOS4wNSA4Ny4yMUM2MjMuMjA2IDkzLjkyMzYgNjE1Ljk1MiAxMTAuMjI4IDYxNS45NTIgMTI2LjcyNUM2MTUuOTUyIDEyOS4yMTggNjE2LjE0MyAxMzYuMTI0IDYxOC42MjQgMTQzLjIyMUM2MjYuNjQyIDE2Ny4zOSA2NDguNDA0IDE2OS4xMTcgNjU2LjYxMiAxNjkuMTE3QzY1OC45MDMgMTY5LjExNyA2NjcuNDk0IDE2OS4xMTcgNjc0Ljc0OCAxNjUuODU2QzY4OS44MjggMTU5LjE0MiA2OTUuOTM3IDE0MS44NzggNjk1LjkzNyAxMjYuNTMzWk01NTMuMTA2IDEyOC4yNTlDNTUzLjEwNiAxMzQuMzk3IDU1Mi41MzMgMTU2LjQ1NyA1MzguNzg5IDE3Mi41NjlDNTM2LjQ5OCAxNzUuNDQ3IDUzMS43MjUgMTgwLjI0MiA1MjMuNzA4IDE4NC44NDZDNTIwLjg0NCAxODYuMzggNTE0LjczNiAxODkuNjQxIDUwNi41MjcgMTkxLjc1MUM0OTkuNjU1IDE5My40NzggNDk0LjY5MSAxOTQuNDM3IDQ4MS4xMzggMTk0LjQzN0gzOTUuNjE2VjU5LjAxMjdINDcyLjE2NkM0NzcuNTExIDU5LjAxMjcgNDgyLjg1NiA1OS4yMDQ1IDQ4OC4yMDEgNTkuNTg4MUM1MTkuNTA4IDYyLjI3MzYgNTMzLjI1MyA3NS41MDkxIDU0MS4yNyA4Ny4yMUM1NTIuNzI0IDEwMy43MDYgNTUzLjEwNiAxMjAuOTcgNTUzLjEwNiAxMjguMjU5Wk01MDUuOTU0IDEyNy4xMDhDNTA1Ljk1NCAxMjIuODg4IDUwNS4zODIgMTA3LjczNSA0OTMuNTQ2IDk4LjUyNzNDNDgzLjgzNiA5MS4xNjM2IDQ3MC4yNTggOTEuMjIwNCA0NjYuMzExIDkxLjIzNjlDNDY2LjE0NiA5MS4yMzc2IDQ2NS45OTcgOTEuMjM4MiA0NjUuODY2IDkxLjIzODJINDQyLjc2OFYxNjMuNzQ2SDQ2Ny4zOTNDNDcwLjA2NiAxNjMuNzQ2IDQ3Mi45MjkgMTYzLjU1NCA0NzUuNzkzIDE2My4xN0M0OTIuNDAxIDE2MS4wNiA0OTguMzE5IDE1My41NzkgNTAxLjU2NCAxNDYuNjc0QzUwNS43NjMgMTM4LjA0MiA1MDUuOTU0IDEzMC43NTMgNTA1Ljk1NCAxMjcuMTA4Wk0yMjguNjg1IDE5NC40MzdIMzcyLjYyMVYxNjMuNzQ2SDI3Ni45ODJWMTQyLjA3SDM2My44MzlWMTExLjU3MUgyNzYuOTgyVjg5LjMySDM3MC45MDNWNTkuMDEyN0gyMjguNjg1VjE5NC40MzdaTTIwOS4xMDcgMTk0LjQzN0gxNTUuODQ3TDEyNy45NzYgMTQ1LjEzOUgxMDIuMzk2VjE5NC40MzdINTMuOTA4MlY1OS4wMTI3SDE1My4xNzRDMTcxLjMwOSA1OS4wMTI3IDE4OC42ODEgNjAuMzU1NCAxOTkuNTYyIDc3LjYxOTFDMjAyLjA0NCA4MS42NDczIDIwNi40MzQgODkuNzAzNyAyMDYuNDM0IDEwMS45OEMyMDYuNDM0IDEwOC4zMSAyMDUuMDk4IDEyNi4zNDEgMTg4LjEwOCAxMzUuNzRDMTg0Ljg2MyAxMzcuNjU4IDE4Mi4zODEgMTM4LjYxNyAxNzUuNTA5IDE0MC4zNDRMMjA5LjEwNyAxOTQuNDM3Wk0xNTguMzI4IDEwMi4xNzJDMTU4LjMyOCAxMDEuMDIxIDE1OC4xMzcgOTcuOTUxOSAxNTYuMjI4IDk1LjI2NjRDMTUyLjk4MyA5MC40NzA5IDE0Ny42MzggODkuNzAzNyAxNDIuNDg0IDg5LjcwMzdIMTAyLjM5NlYxMTQuNjRIMTM4LjY2NkMxNDcuODI5IDExNC42NCAxNTIuNjAxIDExMy40ODkgMTU1LjY1NiAxMDkuODQ1QzE1OC4xMzcgMTA2Ljc3NiAxNTguMzI4IDEwMy43MDYgMTU4LjMyOCAxMDIuMTcyWiIgZmlsbD0iIzE0MTQxNCIvPgo8L3N2Zz4K">
-  <span class="by">Returns post-sales · September 2026</span>
-</footer>
-
-</div>
-
-</body>
-</html>
+    <li>The <strong>largest deal in Redo history</strong> went live (Grailed).</li>
+    <li><strong>Highest ever M0 deal attainment</strong> at 34%.</li>
+    <li><strong>Hiring
